@@ -20,6 +20,8 @@ namespace ClasseTV
 
             int luminosita;
 
+            int volume;
+
             string produttore; //casa produttrice
 
             string modello;
@@ -42,7 +44,25 @@ namespace ClasseTV
 
             int quantitaPorteHDMI; //es 4
 
+            public void accendi(){
+                stato = true;
+            }
 
+            public void spegni() {
+                stato = false;
+            }
+
+            public void canale(int numero) {
+                canaleSelezionato = numero;
+            }
+
+            public void aumentaVolume() {
+                volume += 1;
+            }
+
+            public void diminuisciVolume(){
+                volume += 1;
+            }
         }
     }
 }
