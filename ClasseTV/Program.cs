@@ -61,7 +61,7 @@ namespace ClasseTV
             }
 
             public void diminuisciVolume(){
-                volume += 1;
+                volume -= 1;
             }
         }
     }
