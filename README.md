@@ -1,1 +1,2 @@
 # ClasseTV
+Proprietà classe TV
