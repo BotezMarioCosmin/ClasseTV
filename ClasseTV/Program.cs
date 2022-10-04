@@ -10,6 +10,7 @@ namespace ClasseTV
     {
         static void Main(string[] args)
         {
+
         }
 
         class TV
@@ -56,12 +57,31 @@ namespace ClasseTV
                 canaleSelezionato = numero;
             }
 
+            public void canalePiu()
+            {
+                canaleSelezionato += 1;
+            }
+
+            public void canaleMeno()
+            {
+                canaleSelezionato -= 1;
+            }
+
             public void aumentaVolume() {
                 volume += 1;
             }
 
             public void diminuisciVolume(){
                 volume -= 1;
+            }
+
+            public void Rete(){ //accende la connessione WIFI
+                if (statoRete == false)
+                {
+                    statoRete = true;
+                }
+                else
+                    statoRete = false;
             }
         }
     }
