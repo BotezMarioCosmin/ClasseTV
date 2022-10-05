@@ -8,9 +8,20 @@ namespace ClasseTV
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
+            int numero = 0;
 
+            TV tv1 = new TV();
+            tv1.accendi();
+            tv1.spegni();
+            tv1.canale(numero);
+            tv1.canalePiu();
+            tv1.canaleMeno();
+            tv1.aumentaVolume();
+            tv1.diminuisciVolume();
+            tv1.Rete();
         }
 
         class TV
